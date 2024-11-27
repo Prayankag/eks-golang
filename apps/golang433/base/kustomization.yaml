@@ -1,0 +1,11 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: golang433
+resources:
+  - ns.yaml
+  - golang433-quota.yaml
+  - golang433-deploy.yaml
+  - golang433-svc.yaml
+  - golang433-vs.yaml
+  - golang433-hpa.yaml
